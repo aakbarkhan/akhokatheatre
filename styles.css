@@ -1,0 +1,222 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+#home {
+    background-image: url('img/hero.png');
+    height: 500px;
+    background-size: cover;
+    background-position: center; 
+    /* overflow: hidden; */
+}
+
+.bg {
+    background-image: url('img/bg-img.png');
+    background-size: cover;
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    /* overflow: hidden; */
+}
+
+/* navigation bar */
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgb(165, 165, 165); /* Change the background color as needed */
+    z-index: 1000;
+}
+/* Styles for the navigation links */
+#navbar ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+#navbar ul li {
+    display: inline;
+}
+
+
+#navbar ul li a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #141414; /* Change the link color */
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 62vh; /* Set the height to take the full viewport height */
+}
+
+.hero-text h1 {
+    /* Add styles for the h1 tag */
+    margin: 0; /* Remove default margins */
+    color: #f2f2f2;
+}
+
+.activities {
+    color: #f2f2f2;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+/* section {
+    padding: 20px;
+} */
+
+.hero-layer h2 {
+    color: #5f5d5d;
+}
+.hero-layer {
+    width: 90%;
+    /* height: 400px; */
+    overflow: hidden;
+    position: relative; /* Position the hero-layer absolutely */
+    top: 1%; /* Position it at the vertical center */
+    left: 45%; /* Position it at the horizontal center */
+    transform: translate(-50%, -50%); /* Center it precisely */
+    /* Add other styles for the hero-layer content */
+}
+
+.hero-layer img {
+    width: 100%; /* Ensure the image takes the full width of the container */
+    height: 100%; /* Ensure the image takes the full height of the container */
+    object-fit: contain; /* Fit the entire image inside the container */
+}
+
+.projects, .activities{
+    color: aliceblue;
+    text-align: center;
+    width: 60%;
+}
+
+.card {
+    background-color: yellow;
+    margin: auto;
+    color: black;
+    padding: 30px;
+    text-align: justify;
+}
+
+h4 {
+    text-align: center;
+}
+
+.main {
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #1d1a1a;
+    padding: 20px;
+    color: #f2f2f2;
+}
+
+.footer-top, .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-social, .footer-copyright {
+    /* Add your styles here */
+    padding: 10px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: space-between; /* Adjust as needed */
+}
+
+.social-links a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #f2f2f2;
+}
+
+
+
+
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 2.5rem 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        position: fixed;
+        right: 10px;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+}

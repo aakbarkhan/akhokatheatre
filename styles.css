@@ -173,7 +173,7 @@ footer {
     margin: 5px auto;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    background-color: #101010;
+    background-color: #c5b6b6;
 }
 
 
@@ -189,7 +189,7 @@ footer {
         text-align: center;
         transition: 0.3s;
         box-shadow:
-            0 10px 27px rgba(0, 0, 0, 0.05);
+            0 10px 27px rgba(108, 104, 104, 0.05);
     }
 
     .nav-menu.active {
@@ -219,4 +219,94 @@ footer {
         transform: translateY(-8px) rotate(-45deg);
     }
 
+}
+
+/* about */
+
+.about {
+    background-image: url('img/about.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 815px;
+
+}
+
+.about-card {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    background-color: yellow;
+    text-align: center;
+    padding: 40px;
+}
+
+.about-card p {
+    text-align: justify;
+}
+
+.gallery-btn {
+    display: inline-block;
+    background-color: #008CBA; /* Change to your preferred color */
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 75px 2px 50px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 12px; /* Rounded corners */
+}
+
+.gallery-btn:hover {
+    background-color: white; 
+    color: black; 
+}
+/* team */
+
+.team {
+    background-color: #f2f2f2;
+    margin: 0 auto;
+    width: 85%;
+    
+}
+
+.team-header {
+    text-align: center;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.team-members {
+    display: flex;
+    text-align: center;
+    justify-content: center; /* Center the team cards horizontally */
+
+}
+
+.team-card {
+    flex: 1;
+    margin: 5px; /* Add some space around each team card */
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+}
+
+.name {
+    font-weight: bold; /* Make the name bold */
+}
+
+.team-card img {
+    border-radius: 50%; /* Round image */
+    width: 150px; /* Adjust as needed */
+    height: 150px; /* Adjust as needed */
+}
+
+.bg-play {
+    background-image: url('img/bg-imgaboutpage.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 815px;
 }

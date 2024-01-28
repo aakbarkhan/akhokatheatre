@@ -378,6 +378,8 @@ footer {
 .workshop {
     background-color: #111828;
     height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .workshop div {
@@ -386,6 +388,7 @@ footer {
     left: 20%;
     font-size: xx-large;
     color: #f2f2f2;
+  
 }
 
 .workshop h2 {
@@ -397,5 +400,9 @@ footer {
 
 .workshop-img {
     height: 100%;
-    width: fit-content;
+}
+
+.workshop-img img {
+    max-width: 100%;
+    height: auto;
 }

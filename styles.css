@@ -283,8 +283,9 @@ footer {
 
 .team-members {
     display: flex;
+    flex-wrap: wrap;
     text-align: center;
-    justify-content: center; /* Center the team cards horizontally */
+    justify-content: center;
 
 }
 
@@ -354,4 +355,12 @@ footer {
 
 .each-img img:hover {
     cursor: pointer;
+}
+
+/* vidoes */
+
+.vidoe {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }

@@ -132,7 +132,7 @@ h4 {
 }
 
 footer {
-    background-color: #1d1a1a;
+    background-color: #0f0f4d;
     padding: 20px;
     color: #f2f2f2;
 }
@@ -309,4 +309,49 @@ footer {
     background-size: cover;
     background-position: center;
     height: 815px;
+}
+
+/* gallery */
+
+.gallery {
+    background-image: url('img/gallery.jpg');
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+
+
+.gallery-header {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 42%;
+    font-size: x-large;
+    color: #fff;
+}
+
+.gallery-img {
+    display: flex;
+    background-color: #0c2e39;
+    flex-wrap: wrap; /* Allow the images to wrap to the next line */
+    justify-content: space-around; /* Add some space around each image */
+}
+
+.each-img {
+    flex: 0 0 calc(50% - 20px); /* Each image takes up roughly 50% of the line */
+    margin: 10px; /* Add some margin around each image */
+    overflow: hidden; /* Hide anything that goes outside the div */
+}
+
+.each-img img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Resize the images to cover the div, preserving their aspect ratio */
+}
+
+.each-img img:hover {
+    cursor: pointer;
 }

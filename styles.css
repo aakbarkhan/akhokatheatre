@@ -227,7 +227,7 @@ footer {
     background-image: url('img/about.jpg');
     background-size: cover;
     background-position: center;
-    height: 815px;
+    height: 855px;
 
 }
 
@@ -363,4 +363,38 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    background-color: #18184f;
+}
+
+.single-video {
+    margin-top: 30px;
+    padding: 4px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+}
+
+/* workshop */
+
+.workshop {
+    background-color: #111828;
+    height: 100vh;
+}
+
+.workshop div {
+    position: absolute;
+    top: 59%;
+    left: 20%;
+    font-size: xx-large;
+    color: #f2f2f2;
+}
+
+.workshop h2 {
+    background: linear-gradient(to right, red, rgb(68, 68, 189));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: red;
+}
+
+.workshop-img {
+    height: 100%;
+    width: fit-content;
 }

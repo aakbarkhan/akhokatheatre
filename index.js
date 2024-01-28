@@ -27,7 +27,7 @@ window.onload = function() {
         }
         toggle = !toggle;
         hero.appendChild(img);
-    }, 10000);
+    }, 2000);
 };
 
 

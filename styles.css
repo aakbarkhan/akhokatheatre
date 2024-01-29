@@ -85,16 +85,12 @@ nav ul li a {
     color: black;
 }
 
-/* section {
-    padding: 20px;
-} */
 
 .hero-layer h2 {
     color: #5f5d5d;
 }
 .hero-layer {
     width: 90%;
-    /* height: 400px; */
     overflow: hidden;
     position: relative; /* Position the hero-layer absolutely */
     top: 1%; /* Position it at the vertical center */
@@ -169,8 +165,6 @@ footer {
         
     }
 }
-
-
 
 /* hamberger menu */
 .hamburger {

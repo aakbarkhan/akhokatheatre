@@ -14,19 +14,21 @@ window.onload = function() {
     let heroText = document.querySelector('.hero-layer h2');
 
     setInterval(function() {
-
-        if (toggle) {
-            heroText.textContent = 'Welcome to Our Theatre';
-            hero.appendChild(see_more)
-            img.setAttribute('src', 'img/theater1.png');
-        } else {
-            heroText.textContent = 'View Our Gallery';
-            hero.removeChild(see_more);
-            // see_more.textContent= "View Gallery";
-            img.setAttribute('src', 'img/theater2.jpg');
+        if(heroText){
+            if (toggle) {
+                heroText.textContent = 'Welcome to Our Theatre';
+                hero.appendChild(see_more)
+                img.setAttribute('src', 'img/theater1.png');
+            } else {
+                heroText.textContent = 'View Our Gallery';
+                hero.removeChild(see_more);
+                // see_more.textContent= "View Gallery";
+                img.setAttribute('src', 'img/theater2.jpg');
+            }
+            hero.appendChild(img);
         }
+
         toggle = !toggle;
-        hero.appendChild(img);
     }, 2000);
 };
 

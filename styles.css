@@ -131,6 +131,7 @@ h4 {
     margin-bottom: 20px;
 }
 
+/* footer */
 footer {
     background-color: #0f0f4d;
     padding: 20px;
@@ -141,11 +142,13 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap; /* Allow the items to wrap on smaller screens */
 }
 
 .footer-social, .footer-copyright {
     /* Add your styles here */
     padding: 10px;
+    /* width: 100%; Make these elements take full width on small screens */
 }
 
 .social-links {
@@ -159,9 +162,17 @@ footer {
     color: #f2f2f2;
 }
 
+/* Media query for screens smaller than 768px */
+@media only screen and (max-width: 768px) {
+    .footer-top, .footer-bottom {
+        flex-direction: column; /* Stack the items vertically on small screens */
+        
+    }
+}
 
 
 
+/* hamberger menu */
 .hamburger {
     display: none;
 }
@@ -291,7 +302,7 @@ footer {
 }
 
 .team-card {
-    flex: 1;
+    flex: 0 1 calc(50% - 10px); /* Grow: 0, Shrink: 1, Basis: auto */
     margin: 5px; /* Add some space around each team card */
     box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
 }
@@ -301,9 +312,15 @@ footer {
 }
 
 .team-card img {
+    filter: grayscale(100%);
     border-radius: 50%; /* Round image */
     width: 150px; /* Adjust as needed */
     height: 150px; /* Adjust as needed */
+}
+
+.description {
+    font-size: 16px;
+    font-family: system-ui;
 }
 
 .bg-play {
@@ -312,7 +329,17 @@ footer {
     background-position: center;
     height: 815px;
 }
+/* Media query for screens smaller than 768px */
+@media only screen and (max-width: 768px) {
+    .team-card {
+        flex-basis: 100%; /* Make the team cards take full width on small screens */
+    }
 
+    .team-card img {
+        width: 100px; /* Make the images smaller on small screens */
+        height: 100px;
+    }
+}
 /* gallery */
 
 .gallery {
@@ -368,9 +395,17 @@ footer {
 }
 
 .single-video {
-    margin-top: 30px;
+    margin-top: 50px;
     padding: 4px;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+    /* width: 100%; */
+}
+
+@media only screen and (max-width: 768px) {
+    .single-video iframe {
+        width: 100%;
+        height: auto; /* Maintain aspect ratio */
+    }
 }
 
 /* workshop */

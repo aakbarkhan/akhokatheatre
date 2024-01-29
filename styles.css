@@ -399,14 +399,14 @@ footer {
 
 .workshop {
     background-color: #111828;
-    height: 100vh;
+    height: 70vh;
     display: flex;
     flex-wrap: wrap;
 }
 
 .workshop div {
     position: absolute;
-    top: 30%;
+    top: 20%;
     left: 20%;
     font-size: xx-large;
     color: #f2f2f2;

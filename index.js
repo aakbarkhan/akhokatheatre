@@ -8,28 +8,40 @@ window.onload = function() {
  
     let see_more = document.createElement('a');
     see_more.classList.add('change')
-    see_more.setAttribute('href', '#about');
+    see_more.setAttribute('href', 'about.html');
     see_more.textContent= "Read More";
     let hero = document.querySelector('.hero-layer');
     let heroText = document.querySelector('.hero-layer h2');
+
+    let view_gallery = document.createElement('a'); // Create the "View Gallery" button
+    view_gallery.classList.add('change')
+    view_gallery.setAttribute('href', 'gallery.html'); // Set the href to the gallery section
+    view_gallery.textContent= "View Gallery";
+    
 
     setInterval(function() {
         if(heroText){
             if (toggle) {
                 heroText.textContent = 'Welcome to Our Theatre';
                 hero.appendChild(see_more)
+                if(hero.contains(view_gallery)) { // Check if "View Gallery" button exists
+                    hero.removeChild(view_gallery); // Remove "View Gallery" button
+                }
                 img.setAttribute('src', 'img/theater1.png');
+
             } else {
                 heroText.textContent = 'View Our Gallery';
-                hero.removeChild(see_more);
-                // see_more.textContent= "View Gallery";
+                hero.appendChild(view_gallery); 
+                if(hero.contains(see_more)) { // Check if "Read More" button exists
+                    hero.removeChild(see_more); // Remove "Read More" button
+                }
                 img.setAttribute('src', 'img/theater2.jpg');
             }
             hero.appendChild(img);
         }
 
         toggle = !toggle;
-    }, 2000);
+    }, 5000);
 };
 
 
